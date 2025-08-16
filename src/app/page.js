@@ -27,13 +27,6 @@ export default function Home() {
   }, []);
 
   return (
-    <>
-      <Head>
-        <title>Emanuel Jabon | Portfolio</title>
-        <meta
-        />
-        <link rel="icon" type="image/jpg" href="/images/background.jpg" />
-      </Head>
       <main className={styles.main}>
         <AnimatePresence mode="wait">
           {isLoading && <Preloader />}
@@ -44,6 +37,5 @@ export default function Home() {
         <SlidingImages />
         <Contact />
       </main>
-    </>
   );
 }
